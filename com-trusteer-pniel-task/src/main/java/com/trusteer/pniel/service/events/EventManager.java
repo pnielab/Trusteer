@@ -11,5 +11,5 @@ import java.util.List;
  */
 public interface EventManager {
 
-	void publis(List<String> address);
+	void publish(List<String> address);
 }

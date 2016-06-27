@@ -23,7 +23,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.trusteer.pniel.model.FileHolder;
 import com.trusteer.pniel.service.resolver.FileResolver;
-import com.trusteer.pniel.utils.EncriptDecriptUtils;
+import com.trusteer.pniel.utils.EncryptDecriptUtils;
 
 /**
  * @author Pniel Abramovich
@@ -69,7 +69,7 @@ public class FileResolverImpl implements FileResolver {
 	}
 
 	private String calculateHash(String body) {
-		return EncriptDecriptUtils.encript(body);
+		return EncryptDecriptUtils.encrypt(body);
 	}
 
 	@Override

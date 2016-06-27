@@ -35,9 +35,9 @@ public class EventManagerImpl implements EventManager {
 	}
 
 	@Override
-	public void publis(List<String> address) {
-		// TODO: publish the event to the event us instead of invoking the actual email service.
-		// TODO email service should subscribe to topic of files.hash1.changed
+	public void publish(List<String> address) {
+		// need to publish the event to the eventBus instead of invoking the actual email service.
+		// email service should subscribe to topic such as files.hash1.changed
 		emailService.sendFilesChanged(address, emails);
 	}
 
